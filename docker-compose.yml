@@ -1,0 +1,13 @@
+version: "3.9"
+volumes:
+  hidden-service:
+
+services:
+  tor-proxy:
+    #build: tor-proxy/
+    image: tor-proxy
+    hostname: tor-proxy
+
+  example:
+    build: example/
+    hostname: example
